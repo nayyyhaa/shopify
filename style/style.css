@@ -82,6 +82,57 @@ header{
     color: var(--primary-color);
 }
 
+/*Category section*/
+
+.products-content{
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 3rem;
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.category{
+    border: 1px solid black;
+    border-radius: 2rem;
+    min-height: 60vh;
+    min-width: 300px;
+    padding: 5rem;
+    margin: 3rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    transition: all 0.5s ease-in-out;
+}
+.category1{
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),url('../assets/clothing.jpg');
+    background-position: center;
+    background-size: 180%;
+}
+.category2{
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),url('../assets/electronics.jpg');
+    background-position: center;
+    background-size: 175%;
+}
+.category3{
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),url('../assets/home\ decor.jpg');
+    background-position: center;
+    background-size: 175%;
+}
+
+.category:hover{
+    color: rgb(245, 100, 75);
+    background-size: 190%;
+    background: linear-gradient(0);
+}
+
 /*Media queries*/
 
 @media screen and (max-width:712px){
