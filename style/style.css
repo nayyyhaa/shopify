@@ -1,0 +1,93 @@
+/*Global styles*/
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgb(237, 178, 100);
+}
+html{
+    font-size: 62.5%;  
+    font-family: 'Poppins', sans-serif;
+}
+p, li {
+    font-size: 1.25rem;
+}
+
+/*Nav bar section*/
+
+.navbar{  
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+    color: white;
+}
+header{
+    background: var(--primary-color);
+}
+.navbar h3{ 
+    flex: 2 1 30rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: normal;
+}
+.navbar ul {
+    display: flex;
+    flex: 1 1 30rem;
+    justify-content: space-around;
+}
+.navbar li{
+    padding:  0.5rem 1rem;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Site Content*/
+.site-content {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),transparent),url("../assets/shopping.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.site-content h2{
+    font-size: 3rem;
+}
+.shop-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.shop-btn:hover{
+    background: white;
+    color: var(--primary-color);
+}
+
+/*Media queries*/
+
+@media screen and (max-width:712px){
+    html{
+        font-size: 50%;
+    }
+    .navbar h3{ 
+        text-align: center;
+    }
+}
