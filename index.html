@@ -15,32 +15,58 @@
         <nav class="navbar">
             <h3>shopify.</h3>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="#site-content">Home</a></li>
+                <li><a href="#products-content">Shop</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="site-content">
+    <section id="site-content">
         <h2><em>Shopify</em> your needs</h2>
         <button class="shop-btn">Shop now!</button>
     </section>
 
-    <section class="products-content">
-        <h2>Choose a category</h2>
-        <p>Loads of wide variety  to choose from</p>
+    <section id="products-content">
+        <header class="products-head">
+            <h2>Choose a category</h2>
+            <p>Loads of wide variety  to choose from</p>
+        </header>
+        
         <div class="categories">
-            <div class="category1 category">
-                <h3>Clothings</h3>
+            <div class="category">
+                <div class="category1"> 
+                    <h3>Clothings</h3>
+                </div>
             </div>
-            <div class="category2 category">
-                <h3>Electronics</h3>
+            <div class="category">
+                <div class="category2"> 
+                    <h3>Electronics</h3>
+                </div>
             </div>
-            <div class="category3 category">
-                <h3>Home Decor</h3>
+            <div class="category">
+                <div class="category3"> 
+                    <h3>Home Decor</h3>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="contact">
+        <header class="contact-head">
+            <h2>Contact Us</h2>
+        </header>
+        <form action="#" target="_blank" class="contact-form">
+            <div class="name-form">
+                <label for="username">Name:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="email-form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </section>
 </body>
 </html>

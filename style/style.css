@@ -7,13 +7,35 @@
 }
 :root{
     --primary-color: rgb(237, 178, 100);
+    --secondary-color: rgb(231, 133, 5);
 }
 html{
     font-size: 62.5%;  
     font-family: 'Poppins', sans-serif;
 }
+h2{
+    font-size: 3rem;
+}
 p, li {
     font-size: 1.25rem;
+}
+input{
+    padding: 0.5rem;
+    min-width: 40vw;
+}
+button {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background: white;
+    color: var(--secondary-color);
 }
 
 /*Nav bar section*/
@@ -52,7 +74,7 @@ header{
 }
 
 /*Site Content*/
-.site-content {
+#site-content {
     min-height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.7),transparent),url("../assets/shopping.jpg");
     background-position: center;
@@ -64,33 +86,20 @@ header{
     color: white;
     text-shadow: 2px 2px 2px black;
 }
-.site-content h2{
-    font-size: 3rem;
-}
-.shop-btn {
-    background: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    margin: 1rem;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-.shop-btn:hover{
-    background: white;
-    color: var(--primary-color);
-}
 
 /*Category section*/
 
-.products-content{
+#products-content{
     text-align: center;
     min-height: 100vh;
-    padding-top: 3rem;
-    width: 90%;
     margin: auto;
     font-size: 2rem;
+}
+.products-head{
+    color: white;
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
 }
 .categories{
     display: flex;
@@ -98,41 +107,73 @@ header{
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+    width: 90%;
+    margin: auto;
 }
 .category{
     border: 1px solid black;
     border-radius: 2rem;
     min-height: 60vh;
     min-width: 300px;
-    padding: 5rem;
+    overflow: hidden;
     margin: 3rem;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 2px black;
     transition: all 0.5s ease-in-out;
 }
+.category1,.category2,.category3{
+    min-height: 60vh;
+    min-width: 300px;
+    display: grid;
+    place-items: center;
+}
 .category1{
     background: linear-gradient(rgba(0,0,0,0.5),transparent),url('../assets/clothing.jpg');
     background-position: center;
-    background-size: 180%;
+    background-size: cover;
 }
 .category2{
     background: linear-gradient(rgba(0,0,0,0.5),transparent),url('../assets/electronics.jpg');
     background-position: center;
-    background-size: 175%;
+    background-size: cover;
 }
 .category3{
     background: linear-gradient(rgba(0,0,0,0.5),transparent),url('../assets/home\ decor.jpg');
     background-position: center;
-    background-size: 175%;
+    background-size: cover;
 }
 
-.category:hover{
+.category1:hover,.category2:hover, .category3:hover{
     color: rgb(245, 100, 75);
-    background-size: 190%;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all 0.3s ease-in-out;
     background: linear-gradient(0);
 }
 
+/*Contact page*/
+
+#contact{
+    min-height: 26vh;
+}
+.contact-head{
+    color: white;
+    min-height: 16vh;
+    display: grid;
+    place-items: center;
+}
+.contact-form{
+    background: var(--primary-color);
+    min-height: 10vh;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name-form,.email-form{
+    margin: 0.5rem;
+}
 /*Media queries*/
 
 @media screen and (max-width:712px){
