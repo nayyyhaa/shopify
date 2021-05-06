@@ -39,7 +39,11 @@ button:hover{
 }
 
 /*Nav bar section*/
-
+.main-nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 .navbar{  
     min-height: 10vh;
     display: flex;
